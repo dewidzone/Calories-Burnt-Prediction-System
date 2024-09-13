@@ -1,0 +1,57 @@
+/* Navbar container */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Site logo */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Navbar title (Site Logo) */
+.site-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navbar links */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar list items */
+.nav li {
+    display: inline;
+}
+
+/* Navbar links styling */
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.nav a:hover {
+    color: #ddd;
+}
+
+/* Active link styling */
+.nav .active a {
+    color: #ff6347; /* Active link color */
+    font-weight: bold;
+}

@@ -1,0 +1,41 @@
+/* ResultNotification.css */
+.result-notification {
+    background: linear-gradient(145deg, #4caf50, #153d23); /* Gradient background */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600; /* Slightly bolder font for emphasis */
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    position: relative; /* Required for pseudo-element */
+    animation: slideIn 0.5s ease-out, fadeIn 0.5s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for definition */
+  }
+  
+  /* Animation for Notification Box */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  

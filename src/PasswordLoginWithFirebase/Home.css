@@ -1,0 +1,271 @@
+.navbar-fixed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure the navbar starts at the left edge */
+    width: 100%; /* Full width of the viewport */
+    z-index: 999;
+    background-color: #fff; /* Ensure the background is solid */
+    border-bottom: 1px solid #ccc; /* Optional: Add a border for separation */
+    padding: 10px 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Image Container */
+.home-image-container {
+    position: fixed;
+    top: 80px;
+    left: 70px;
+    width: 50vw;
+    height: 80vh;
+    overflow: hidden;
+    z-index: -1; /* Ensure image stays behind content */
+}
+
+.home-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: lubDub 4s infinite; /* Heartbeat animation with fade */
+}
+
+
+
+
+/* Content Container */
+.home-container {
+    flex: 1;
+    margin-left: 50vw; /* Push content to the right of the image */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    animation: fadeIn 1s ease-in-out;
+    overflow-y: auto; /* Allow scrolling for content */
+    position: relative;
+    z-index: 1; /* Ensure content is above image */
+    width: 80vw;
+    height: 80vh;
+    top: 50px;
+    left: 20px;
+}
+
+/* Headings */
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Text Content */
+.home-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+    margin-top: 30px;
+}
+
+.vision-mission h2 {
+    font-size: 2rem;
+    color: #bd2dda;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.vision-mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffc1c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    color: #f39c12; /* Gold color for stars */
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin-left: 10px; /* Spacing between comment and stars */
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d9d9;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 600px; /* Max width for readability */
+}
+
+.contact-info h2 {
+    font-size: 2rem; /* Font size for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.contact-info p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    color: #666; /* Medium gray text color */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    margin-left: 10px; /* Space between text and button */
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.contact-button:active {
+    background-color: #004085; /* Even darker blue on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .home-image-container {
+        width: 80vw;
+        height: 50px;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: visible; /* Ensure image visibility */
+    }
+
+    .home-container {
+        margin-left: 0;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .vision-mission h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p,
+    .vision-mission p {
+        font-size: 1rem;
+    }
+}
+
+/* Lub Dub Heartbeat Animation */
+@keyframes lubDub {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.4;
+    }
+    75% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

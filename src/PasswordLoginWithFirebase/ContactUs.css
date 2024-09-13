@@ -1,0 +1,73 @@
+.contact-container {
+  max-width: 1200px; /* Increase max-width for more space */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.contact-message {
+  flex: 1; /* Take up the remaining space */
+  font-size: 20px;
+  line-height: 1.5;
+  color: #0e0c0c;
+  padding-right: 20px; /* Add space between the paragraph and the form */
+  max-width: 50%; /* Ensure it does not exceed 50% of the container width */
+}
+
+.contact-box {
+  flex: 1; /* Take up the remaining space */
+  background-color: #b3bbff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 50%; /* Ensure it does not exceed 50% of the container width */
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box input[type='text'],
+.contact-box input[type='email'],
+.contact-box textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-box textarea {
+  height: 100px;
+}
+
+.contact-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+
+.contact-box button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

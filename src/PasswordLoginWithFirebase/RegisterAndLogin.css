@@ -1,0 +1,100 @@
+.registeandlogin-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  height: 560px;
+  background: linear-gradient(45deg, #9897ce, #7779df);
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
+  border-radius: 10px;
+}
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;  
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.activeColor {
+  background-color: #0056b3;
+}
+
+form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: calc(100% - 22px); /* Adjust width to leave space for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-block:hover {
+  background-color: #0056b3;
+}

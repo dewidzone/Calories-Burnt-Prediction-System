@@ -1,0 +1,140 @@
+
+
+
+/* Sign Out Button */
+.sign-out-btn {
+  margin-right: 20px; /* Adjust as necessary */
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-out-btn:hover {
+  background-color: #ff4c4c;
+}
+
+
+/* Prediction Container */
+.prediction-container {
+  padding: 120px 20px 20px; /* Add extra padding at the top to account for the navbar */
+  background-color: #f7f7f7;
+  min-height: 100vh; /* Ensure container covers at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Content Styling */
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Bullet List */
+.bullet-list {
+  list-style: none;
+  padding-left: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.bullet-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.bullet-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px; /* Size of bullet */
+  height: 12px; /* Size of bullet */
+  border-radius: 50%;
+  background-color: #bd2dda; /* Bullet color */
+  animation: bulletAnimation 1s infinite alternate; /* Animation */
+}
+
+/* Form Label */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Form Input Fields */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Form Buttons */
+button.form-button {
+  padding: 10px 20px;
+  margin: 0 5px; /* Space between buttons */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Result Display */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  position: relative; /* Required for pseudo-element */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease;
+}
+
+/* Bullet Animation */
+@keyframes bulletAnimation {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+/* Ensure that the modal is above other content */
+.modal-overlay {
+  animation: fadeIn 0.3s ease;
+}
